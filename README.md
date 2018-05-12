@@ -55,8 +55,7 @@ memory structure in next page...
 
 **MEMORY FOR A RUNNING PROCESS**
 
-![...](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/1.gif){width="3.498611111111111in"
-height="4.174418197725284in"} Source:
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/1.gif) Source:
 [*[http://i.stack.imgur.com/1Yz9K.gif]{.underline}*](http://i.stack.imgur.com/1Yz9K.gif)
 
 1.  **Stack**: This is the place where all the function parameters,
@@ -109,7 +108,7 @@ height="4.174418197725284in"} Source:
 
 **MEMORY MANAGEMENT DURING FUNCTION CALLS**
 
-![](media/image2.png){width="6.26875in" height="2.6597222222222223in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/2.png)
 
 Assume our **%rip** is pointing to the **func** call in **main**. The
 following steps would be taken:
@@ -145,15 +144,12 @@ following steps would be taken:
 
 This is how the stack would look while in **func**.
 
-![C:\\Users\\Muhammet
-Mucahit\\Desktop\\asd.png](media/image3.png){width="5.732557961504812in"
-height="3.805194663167104in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/3.png)
 
 EXPLOITING
 ==========
 
-![](media/image4.png){width="6.216297025371828in"
-height="4.162790901137358in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/4.png)
 
 Here is our code! It includes an uncalled function as you can see. It's
 the **secretFunction()**. We will try to execute it even though it's not
@@ -194,7 +190,7 @@ With this command we will get some information about program.
 
 Result of this command:
 
-![](media/image5.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/5.png)
 
 As you can see above, the **secretFunction's address** is
 **00000000004005b6**.
@@ -207,9 +203,7 @@ address of **secretFunction** to the **Instruction Pointer** to call
 variables of **vuln** function. If you remember we asked also for
 **400** bytes in our code.
 
-![C:\\Users\\Muhammet
-Mucahit\\Desktop\\buffer1.png](media/image6.png){width="3.0450339020122486in"
-height="1.220929571303587in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/6.png)
 
 The **400** is our buffer size.
 
@@ -223,8 +217,7 @@ Our registers are 8 byte because our system is 64-bit.
 
 After this command we will write codes below and save/close it.
 
-![](media/image7.png){width="6.255816929133858in"
-height="0.9069772528433946in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/7.png)
 
 It's our payload generator. We write the 'a' character 408 times because
 our buffer size is 400 and also our rbp (base pointer) size is 8. After
@@ -239,8 +232,7 @@ even though it's not called.
 When we run our code with our payload, we faced with this result:
 
 ![C:\\Users\\Muhammet
-Mucahit\\Desktop\\Capture.PNG](media/image8.png){width="6.268734689413823in"
-height="2.081395450568679in"}
+Mucahit\\Desktop\\Capture.PNG](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/8.png)
 
 Did you see! We exploited and accessed to the secretFunction.
 
@@ -253,11 +245,11 @@ Did you see! We exploited and accessed to the secretFunction.
 We exploited the same code and run a shell script which deletes a file
 whose name is dummy.
 
-![](media/image9.png){width="6.26875in" height="4.072916666666667in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/9.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-![](media/image10.png){width="6.26875in" height="2.9479166666666665in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/10.png)
 
 Here it is our payload generator. You can also see the shell code in
 this.
@@ -266,7 +258,7 @@ this.
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-![](media/image11.png){width="6.26875in" height="0.1597222222222222in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/11.png)
 
 We used it and write our payload to **textFileShell**.
 
@@ -275,19 +267,19 @@ We used it and write our payload to **textFileShell**.
 Now you can see the file which is named as a dummy. We will delete it
 now.
 
-![](media/image12.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/12.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
 We run the code and now let's look at the files.
 
-![](media/image13.png){width="6.26875in" height="1.7833333333333334in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/13.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
 The dummy file was deleted.
 
-![](media/image14.png){width="6.26875in" height="1.6243055555555554in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/14.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
@@ -298,11 +290,11 @@ The dummy file was deleted.
 We exploited the same code and run a shell script which deletes a file
 whose name is dummy.
 
-![](media/image9.png){width="6.26875in" height="3.8229166666666665in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/9.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-![](media/image15.png){width="6.26875in" height="3.1145833333333335in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/15.png)
 
 Here it is our payload generator. You can also see the shell code in
 this.
@@ -311,7 +303,7 @@ this.
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-![](media/image11.png){width="6.26875in" height="0.1597222222222222in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/11.png)
 
 We used it and write our payload to **textFileShell**.
 
@@ -320,9 +312,9 @@ We used it and write our payload to **textFileShell**.
 When we run the code it listened the tcp port 4444 through our shell
 code.
 
-![](media/image16.png){width="6.26875in" height="2.175in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/16.png)
 
-![](media/image17.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/17.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
@@ -330,17 +322,14 @@ As you can see when we netcut our listening port we can access
 everything. We can see files with **ls** like below screenshot. We can
 remove files. We can do everything.
 
-![](media/image18.png){width="5.447916666666667in"
-height="1.5729166666666667in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/18.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
 PROTECTING
 ==========
 
-![C:\\Users\\Muhammet
-Mucahit\\Desktop\\Capture.PNG](media/image19.png){width="6.26875in"
-height="4.547315179352581in"}
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/19.png)
 
 We used the fgets() function to protect ourselves from buffer overflow.
 It's just an example. We can use various way for protection.
