@@ -55,7 +55,9 @@ memory structure in next page...
 
 **MEMORY FOR A RUNNING PROCESS**
 
-![file:///C:/Users/Muhammet%20Mucahit/Desktop/1.gif] Source:
+![C:\\Users\\Muhammet
+Mucahit\\Desktop\\memory.gif](media/image1.gif){width="3.498611111111111in"
+height="4.174418197725284in"} Source:
 [*[http://i.stack.imgur.com/1Yz9K.gif]{.underline}*](http://i.stack.imgur.com/1Yz9K.gif)
 
 1.  **Stack**: This is the place where all the function parameters,
