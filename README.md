@@ -55,7 +55,7 @@ memory structure in next page...
 
 **MEMORY FOR A RUNNING PROCESS**
 
-![...](https://raw.githubusercontent.com/Mucahit3/Security-Exercises/tree/master/Screenshots/1.gif){width="3.498611111111111in"
+![...](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/1.gif){width="3.498611111111111in"
 height="4.174418197725284in"} Source:
 [*[http://i.stack.imgur.com/1Yz9K.gif]{.underline}*](http://i.stack.imgur.com/1Yz9K.gif)
 
