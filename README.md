@@ -294,7 +294,7 @@ whose name is dummy.
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/15.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/16.png)
 
 Here it is our payload generator. You can also see the shell code in
 this.
