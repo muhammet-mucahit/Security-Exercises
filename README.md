@@ -345,3 +345,22 @@ height="4.547315179352581in"}
 
 We used the fgets() function to protect ourselves from buffer overflow.
 It's just an example. We can use various way for protection.
+
+Sources
+=======
+
+[[https://www.youtube.com/watch?v=1S0aBV-Waeo]{.underline}](https://www.youtube.com/watch?v=1S0aBV-Waeo)
+
+[[http://www.therabb1thole.co.uk/tutorial/linux-64-bit-buffer-overflow-tutorial/]{.underline}](http://www.therabb1thole.co.uk/tutorial/linux-64-bit-buffer-overflow-tutorial/)
+
+[[https://dl.packetstormsecurity.net/papers/attack/64bit-overflow.pdf]{.underline}](https://dl.packetstormsecurity.net/papers/attack/64bit-overflow.pdf)
+
+[[https://stackoverflow.com/questions/15533889/buffer-overflows-on-64-bit]{.underline}](https://stackoverflow.com/questions/15533889/buffer-overflows-on-64-bit)
+
+[[https://dhavalkapil.com/blogs/Buffer-Overflow-Exploit/]{.underline}](https://dhavalkapil.com/blogs/Buffer-Overflow-Exploit/)
+
+[[https://bytesoverbombs.io/exploiting-a-64-bit-buffer-overflow-469e8b500f10]{.underline}](https://bytesoverbombs.io/exploiting-a-64-bit-buffer-overflow-469e8b500f10)
+
+[[https://samsclass.info/127/proj/p13-64bo.htm]{.underline}](https://samsclass.info/127/proj/p13-64bo.htm)
+
+[[https://blog.techorganic.com/2015/04/10/64-bit-linux-stack-smashing-tutorial-part-1/]{.underline}](https://blog.techorganic.com/2015/04/10/64-bit-linux-stack-smashing-tutorial-part-1/)
