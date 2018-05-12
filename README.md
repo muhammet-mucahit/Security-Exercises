@@ -312,9 +312,9 @@ We used it and write our payload to **textFileShell**.
 When we run the code it listened the tcp port 4444 through our shell
 code.
 
-![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/16.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/18.png)
 
-![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/17.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/19.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
@@ -322,14 +322,14 @@ As you can see when we netcut our listening port we can access
 everything. We can see files with **ls** like below screenshot. We can
 remove files. We can do everything.
 
-![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/18.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/20.png)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
 PROTECTING
 ==========
 
-![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/19.png)
+![](https://github.com/Mucahit3/Security-Exercises/blob/master/Screenshots/21.png)
 
 We used the fgets() function to protect ourselves from buffer overflow.
 It's just an example. We can use various way for protection.
